@@ -14,17 +14,17 @@
         <div class="row text-center text-white">
             <div class="col-lg-8 mx-auto">
                 <h1 class="display-4">Contatos</h1>
-                <a href="/cadastrar" class="btn btn-secondary rounded-circle">
-                  <i class="material-icons">add</i>
-                </a>
+                <i class="material-icons">
+                  <a href="/cadastrar" class="btn btn-outline-light rounded-circle">add</a>
+                </i>
             </div>
         </div>
     </div>
-
+    <!-- Container do card-deck -->
     <div class="container">
         <div class="row text-center">
 
-            <!-- Team item -->
+            <!-- Cards -->
           {% for c in contatos %}
             <div class="col-xl-3 col-sm-6 mb-5">
                 <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../static/image/perfil.png" alt="" width="100" class="img-fluid rounded-circle mb-3 shadow-sm">
@@ -36,6 +36,7 @@
             <!-- End -->
         </div>
     </div>
+    <!-- fim do card-deck -->
   </main>
 </body>
 </html>
