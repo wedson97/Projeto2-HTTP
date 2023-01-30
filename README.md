@@ -1,11 +1,9 @@
-<h1> Projeto 2 - Protoxolo de Intercoexão de Redes de Computadores</h1>
+<h1> Projeto 2 - Protocolo de Interconexão de Redes de Computadores</h1>
 <h2> Descrição </h2>
 
-> * Projeto desenvolvido como atividade referente a matéria Protocolo de Interconexão > * de Redes de Computadores do curso Tecnologia em Sistemas para internet - IFPB 
-> * Guarabira. O projeto consiste na estruturação de uma página Web usando a 
-> * biblioteca Flask do python, na qual mostrará as informações em sua página 
-> * principal, informações essas que quando cadastradas ficara salvo em um banco de 
-> * dados no formato json administrado pelo flask.
+> * Projeto desenvolvido como atividade referente a matéria Protocolo de Interconexão de Redes de Computadores do curso Tecnologia em Sistemas para internet - IFPB Guarabira.
+>  O projeto consiste na estruturação de uma página Web usando a biblioteca Flask do python, na qual coleta informações do usuário e as retorna em sua página principal.
+> * As informações cadastradas são arquivadas em formato JSON administrado pelo flask.
 
 <h3> Pré - Requisitos </h3>
 
@@ -21,8 +19,7 @@
 > Funcionalidades da página:
 
 > * Mostrar a lista de contatos.
-> * Fazer login de clientes já cadastrados.
-> * Cadrastar clientes novos.
+> * Cadrastar novos contatos de e-mail.
 >
 > Bibliotecas usadas no servidor:
 >
@@ -31,17 +28,16 @@
 
 <h3> Execucão </h3>
 
-> A execução da página inicializa com o servidor python, onde é disponibilizado um link de acesso à página
-> Imaginando que a página estivesse no ar, o cliente teria apenas que colocar a URL de acesso, apartir daí ele teria acesso as funcionalidades da página como 
-> cadastro e lista de contatos
+> A execução da página inicializa com o servidor python, onde é disponibilizado um link de acesso à página.
+> Imaginando que a página estivesse no ar, o cliente teria apenas que colocar a URL de acesso, a partir daí ele teria acesso as funcionalidades da página como cadastro e lista de contatos.
 
 <h2> Estruturação do código </h2>
 
 <h3> Arquivo Python </h3>
 
 > * Ele começa importando as bibliotecas Flask e Json no python.
-> * Logo em seguida é criada a função que ler o banco de dados com os dados dos cadastrados e retorna a página principal com os dados do clientes cadastrados.
-> * Caso o a rota de cadastro for solicitada, é executada uma função que ler o banco de dados, salva em uma variável seu " .load ", salva em variáveis os dados que for colocado no campo " nome " e " email ", em seguida todos são salvos em uma variável no formato json, e adicionado onde o carregamento do banco de dados foi salvo.
+> * Logo em seguida é criada a função que ler o banco de dados e retorna a página principal com os dados dos contatos cadastrados.
+> * Caso a rota de cadastro for solicitada, é executada uma função que ler o banco de dados, salva seu " .load " em uma variável, processa os dados que forem colocados no campo " nome " e " email ", em seguida todos são salvos em uma variável do tipo json, e adicionado onde o carregamento do banco de dados foi salvo.
 
 <h3> Arquivos HTML </h3>
 <h4> HTML contato <h4>
@@ -53,5 +49,5 @@
 <h4> HTML cadastrar </h4>
 
 > * Ela começa linkando aos arquivos do css
-> * a página tem um titulo nomeado de " home ", em que redireciona para a página principal
+> * a página tem um botão nomeado de " home ", em que redireciona para a página principal
 > * em seguida é estruturado o formulário de cadastro, que solicita o nome e o email do cliente e exibe um botão que envia os dados para o banco de dados. 
