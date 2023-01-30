@@ -32,7 +32,7 @@
 <h3> Execucão </h3>
 
 > A execução da página inicializa com o servidor python, onde é disponibilizado um link de acesso à página
-> Imaginando que a página estivesse no ar, o cliente teria apenas que colocar a URL de acesso, apartir daí ele teria acesso as funcionalidades da página como login, 
+> Imaginando que a página estivesse no ar, o cliente teria apenas que colocar a URL de acesso, apartir daí ele teria acesso as funcionalidades da página como 
 > cadastro e lista de contatos
 
 <h2> Estruturação do código </h2>
